@@ -1,7 +1,7 @@
 # Repository of Javascript Projects Containing Original Designs Suitable for All Levels
 
 ## Projects
-++ Tip Calculator
-++ Rock Paper Scissors Game
-++ Pomodoro Timer
-++ Dark Mode Toggle Button
+1. Tip Calculator
+2. Rock Paper Scissors Game
+3. Pomodoro Timer
+4. Dark Mode Toggle Button
