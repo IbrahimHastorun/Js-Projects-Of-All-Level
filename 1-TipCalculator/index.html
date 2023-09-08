@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-TipCalculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator-content">
+        <div class="content-header">
+            <h1>Mr <span>TIP</span> Calculator</h1>
+        </div>
+
+        <div class="content-body">
+            <div class="content-body-top">
+                <h3>Total Amount</h3>
+                <p>$ <strong id="total-amount-text">000</strong></p>
+            </div>
+
+            <div class="content-body-bottom">
+                <div class="body-bottom-item">
+                    <span class="title">Total Bill</span>
+                    <p>$ <strong id="total-bill-text">000</strong></p>
+                </div>
+
+                <div class="body-bottom-item">
+                    <span class="title">Total Tip</span>
+                    <p>$ <strong id="total-tip-text">000</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-footer">
+            <div class="input-bill-area">
+                <div class="area-title">
+                    <p>Enter</p>
+                    <span>your bill</span>
+                </div>
+
+                <div class="input-area">
+                    <p>$</p>
+                    <input type="number" min="1" id="bill-input">
+                </div>
+            </div>
+
+            <div class="choose">
+                <div class="area-title">
+                    <p>Choose</p>
+                    <span>your bill</span>
+                </div>
+
+                <div class="choose-area">
+                    <button id="btn-10">10%</button>
+                    <button id="btn-15">15%</button>
+                    <button id="btn-20">20%</button>
+                    <button id="custom-tip-btn">Custom tip</button>
+                </div>
+            </div>
+
+            <div class="custom-tip-area hidden">
+                <div class="area-title">
+                    <p>Calculate</p>
+                    <span>Custom Tip</span>
+                </div>
+
+                <div class="custom-area">
+                    <p>%</p>
+                    <input type="number" id="custom-tip-input" min="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

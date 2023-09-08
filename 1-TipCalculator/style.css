@@ -1,0 +1,147 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01C9BE;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+#calculator-content {
+    background-color: #E7EDEA;
+    border: 5px solid #000;
+    border-radius: 8px;
+    padding: 70px 100px;
+}
+
+.content-header {
+    margin-bottom: 40px;
+}
+
+.content-header span {
+    font-weight: bold;
+}
+
+.content-body {
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #FFF;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.content-body .content-body-top {
+    padding: 0 10px;
+    border-bottom: 3px solid #E7EDEA;
+}
+
+.content-body-top p {
+    font-size: 25px;
+}
+
+.content-body-top p strong {
+    font-size: 30px;
+}
+
+.content-body .content-body-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.content-body-bottom .body-bottom-item {
+    margin-top: 8px;
+}
+
+.body-bottom-item p {
+    color: #01C9BE;
+}
+
+.body-bottom-item p strong {
+    font-size: 20px;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.content-footer .area-title p {
+    font-weight: bold;
+    margin-bottom: 0px !important;
+}
+
+.content-footer .input-bill-area , .content-footer .choose , .content-footer .custom-tip-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-bill-area .input-area , .custom-tip-area .custom-area {
+    display: flex;
+    align-items: center;
+}
+
+.input-bill-area .input-area p , .custom-tip-area .custom-area p {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.input-bill-area .input-area input , .custom-tip-area .custom-area input {
+    padding: 5px 5px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.choose .choose-area {
+    display: flex;
+    gap: 5px;
+}
+
+.choose-area button , .custom-tip-area .custom-area button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #01C9BE;
+    border : 1px solid #01C9BE;
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: all .4s ease;
+}
+
+.choose-area button:hover , .custom-tip-area .custom-area button:hover {
+    color: #01C9BE;
+    background-color: #fff;
+}

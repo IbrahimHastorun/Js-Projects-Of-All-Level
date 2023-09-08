@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-RockPaperScissorsGame</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-game-area">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="choose-list">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i>
+            <i class="fa-regular fa-hand-scissors"></i>
+        </div>
+
+        <button id="start-game-btn">Start Game</button>
+    </div>
+
+    <div id="game-area" class="hidden d-none">
+        <h1>Rock Paper Scissors</h1>
+        <p class="rule">Whoever gets 5 points wins</p>
+
+        <div class="score-area">
+            <p class="score" id="player-score-board">0</p>
+            <p>:</p>
+            <p class="score" id="computer-score-board">0</p>
+        </div>
+
+        <p class="winner-text" id="winner-text"></p>
+
+        <div class="game-area-choose">
+            <div class="game-choose-item">
+                <h4>Player</h4>
+                <div class="choose-list-item" id="player-buttons">
+                    <button id="player-rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+                    <button id="player-paper"><i class="fa-regular fa-hand"></i></button>
+                    <button id="player-scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+                </div>
+            </div>
+
+            <div class="game-choose-item">
+                <h4>Computer</h4>
+                <div class="choose-list-item" id="computer-buttons">
+                    <button class="disabled" id="computer-rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+                    <button class="disabled" id="computer-paper"><i class="fa-regular fa-hand"></i></button>
+                    <button class="disabled" id="computer-scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="score-area" class="hidden d-none">
+        <h1 class="score-winner-text">A</h1>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

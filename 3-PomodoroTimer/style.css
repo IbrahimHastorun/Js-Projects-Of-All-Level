@@ -1,0 +1,61 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .6;
+}
+
+#pomodoro-content {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#pomodoro-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#pomodoro-content #timer-text {
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+
+#pomodoro-content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.buttons #start-btn { background-color: #27ae60; border: 3px solid #27ae60; transition: all .2s ease; }
+.buttons #start-btn:hover { background-color: #fff; color: #27ae60; }
+
+.buttons #stop-btn { background-color: #c0392b; border: 3px solid #c0392b; transition: all .2s ease; }
+.buttons #stop-btn:hover { background-color: #fff; color: #c0392b; }
+
+.buttons #reset-btn { background-color: #7f8c8d; border: 3px solid #7f8c8d; transition: all .2s ease; }
+.buttons #reset-btn:hover { background-color: #fff; color: #7f8c8d; }
